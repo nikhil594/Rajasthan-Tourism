@@ -1,0 +1,2096 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="description" content=" and much more travel packages at best price. ">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+
+
+    <title>
+
+        Rajasthan Tourism
+
+    </title>
+
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400italic|Work+Sans:300,400,500,600" rel="stylesheet" type="text/css">
+    <link href="css/toolkit-startup.css" rel="stylesheet">
+    <link href="css/application-startup.css" rel="stylesheet">
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins');
+
+        html{
+            scroll-behavior: smooth;
+        }
+
+        body {
+
+            font-family: 'Poppins', sans-serif;
+        }
+
+        #special:hover {
+
+            color: #fff;
+
+        }
+
+        canvas {
+
+            cursor: crosshair;
+            display: block;
+            background: url('img/diwalifinal.jpg') no-repeat center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+
+        }
+
+        @media only screen and (max-width: 767px) {
+            canvas {
+                background-image: url(img/mobilediwali);
+                cursor: crosshair;
+            display: block;
+            background-repeat: no-repeat;
+            background-size: cover;
+                
+            background-position: center center;
+            background-attachment: fixed;
+            }
+        }
+
+
+
+        .box {
+            position: relative;
+            width: 300px;
+            height: 400px;
+            margin: 60px auto 20px auto;
+            background: #000;
+            box-shadow: 0 30px 30px rgba(0, 0, 0, .5);
+	    border-radius: 10px;
+        }
+
+        .box .imgBx {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+	    border-radius: 10px;
+        }
+
+        .box .imgBx img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.5s;
+	    border-radius: 10px;
+        }
+
+        .box:hover .imgBx img {
+            opacity: 0;
+        }
+
+        .box .content {
+            position: absolute;
+            bottom: 20px;
+            left: 10%;
+            width: 80%;
+            height: 75px;
+            background: #fff;
+            transition: 0.5s;
+            overflow: hidden;
+
+            padding: 15px;
+            box-sizing: border-box;
+	    border-radius: 10px;
+        }
+
+        .box:hover .content {
+            width: 100%;
+            height: 100%;
+            bottom: 0;
+            left: 0;
+        }
+
+        .box .content h3 {
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+        }
+
+        .box .content p {
+            margin: 10px 0 0;
+            padding: 0;
+            opacity: 0;
+            line-height: 1.2em;
+            transition: 0.5s;
+            text-align: justify;
+        }
+
+        .box:hover .content p {
+            opacity: 1;
+            transition-delay: 0.5s;
+        }
+
+        .box:hover .content p {
+            opacity: 1;
+            transition-delay: 0.5s;
+        }
+
+
+
+        .carousel-item {
+            height: 100vh;
+            min-height: 350px;
+            background: no-repeat center center scroll;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        @media only screen and (max-width: 620px) {
+
+            .carousel-item {
+
+                height: 60vh;
+                min-height: 350px;
+                width: 100%;
+
+            }
+
+        }
+
+
+
+
+        @font-face {
+            font-family: 'Genericons';
+            src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/53819/genericons-regular-webfont.eot");
+            src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/53819/genericons-regular-webfont.woff") format("woff"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/53819/genericons-regular-webfont.eot") format("truetype");
+        }
+
+        .social-container {
+            position: relative;
+            display: inline-block;
+            width: 164px;
+            height: 36px;
+            perspective: 300px;
+            font-size: 24px;
+            margin: 8px;
+        }
+
+        .social-container .social-cube {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: all 0.333s;
+            transform: translateZ(-18px);
+        }
+
+        .social-container .social-cube .front,
+        .social-container .social-cube .bottom {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            transition: background 0.333s;
+        }
+
+        .social-container .social-cube .front {
+            transform: rotateX(0deg) translateZ(18px);
+        }
+
+        .social-container .social-cube .bottom {
+            transform: rotateX(-90deg) translateZ(18px);
+        }
+
+        .social-container:hover .social-cube {
+            transform: translateZ(-18px) rotateX(90deg);
+        }
+
+        .social-container.twitter .social-cube .front,
+        .social-container.twitter .social-cube .back {
+            background: #4099ff;
+        }
+
+        .social-container.twitter .social-cube .bottom {
+            background: #0d7eff;
+        }
+
+        .social-container.twitter:hover .social-cube .bottom {
+            background: #4099ff;
+        }
+
+        .social-container.twitter:hover .social-cube .front {
+            background: #73b4ff;
+        }
+
+        .social-container.facebook .social-cube .front,
+        .social-container.facebook .social-cube .back {
+            background: #3b5998;
+        }
+
+        .social-container.facebook .social-cube .bottom {
+            background: #2d4373;
+        }
+
+        .social-container.facebook:hover .social-cube .bottom {
+            background: #3b5998;
+        }
+
+        .social-container.facebook:hover .social-cube .front {
+            background: #4c70ba;
+        }
+
+        .social-container.youtube .social-cube .front,
+        .social-container.youtube .social-cube .back {
+            background: #D62976;
+        }
+
+        .social-container.youtube .social-cube .bottom {
+            background: #D62976;
+        }
+
+        .social-container.youtube:hover .social-cube .bottom {
+            background: #D62976;
+        }
+
+        .social-container.youtube:hover .social-cube .front {
+            background: #D62976;
+        }
+
+
+
+
+
+        .details {
+
+            text-align: center;
+            display: inline-block;
+            font-size: 150%;
+            font-weight: bold;
+            color: #fff;
+
+        }
+
+        .details:hover {
+
+            color: white;
+            font-weight: bold;
+            text-decoration-color: white;
+
+        }
+
+
+
+
+
+        .services-section .container {
+            z-index: 2;
+            position: relative;
+        }
+
+        .services {
+            background: #fff;
+            -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.03);
+            -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.03);
+            box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.03);
+            padding: 25px;
+            -moz-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            -webkit-transition: all 0.3s ease;
+            -ms-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            -ms-border-radius: 2px;
+            border-radius: 2px;
+        }
+
+        .services .icon {
+            line-height: 1.3;
+            position: relative;
+        }
+
+        .services .icon span {
+            font-size: 60px;
+            color: #f85959;
+        }
+
+        .services .media-body h3 {
+            font-size: 20px;
+        }
+
+        .services:hover {
+            background: #f85959;
+            color: #fff;
+        }
+
+        .services:hover .icon span {
+            color: #fff;
+        }
+
+        .services:hover h3 {
+            color: #fff;
+        }
+
+        .list-services {
+            margin-top: 40px;
+            padding: 0;
+        }
+
+        .list-services li {
+            font-size: 18px;
+            list-style: none;
+        }
+
+        .list-services li a {
+            color: #000000;
+        }
+
+        .ftco-section .ftco-sub-title {
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: .5em;
+            color: #d4d4d4;
+            font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-weight: 300;
+        }
+
+        .ftco-section .ftco-primary-title {
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+
+        .media-custom {
+            background: #fff;
+        }
+
+        .media-custom .media-body .name {
+            font-weight: 500;
+            font-size: 16px;
+            margin-bottom: 0;
+            color: #f85959;
+        }
+
+        .media-custom .media-body .position {
+            font-size: 13px;
+            color: #d9d9d9;
+        }
+
+        .about-author .desc h3 {
+            font-size: 24px;
+        }
+
+        .ftco-section {
+            padding: 6em 0;
+            position: relative;
+        }
+
+        @media (max-width: 767.98px) {
+            .ftco-section {
+                padding: 6em 0;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .ftco-section .container-fluid {
+                padding: 0 4em;
+            }
+        }
+
+        .testimony-section {
+            position: relative;
+        }
+
+        .testimony-section .owl-carousel {
+            margin: 0;
+        }
+
+        .testimony-section .owl-carousel .owl-stage-outer {
+            padding-bottom: 2em;
+            position: relative;
+        }
+
+        .testimony-wrap {
+            -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.03);
+            -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.03);
+            box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.03);
+            background: #fff;
+            display: block;
+            position: relative;
+            padding: 30px;
+        }
+
+        .testimony-wrap .text {
+            width: calc(100% - 100px);
+        }
+
+        .testimony-wrap .user-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: relative;
+        }
+
+        .testimony-wrap .user-img .quote {
+            position: absolute;
+            bottom: -10px;
+            right: 0;
+            width: 40px;
+            height: 40px;
+            background: #f85959;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            border-radius: 50%;
+        }
+
+        .testimony-wrap .user-img .quote i {
+            color: #fff;
+        }
+
+        .testimony-wrap .name {
+            font-weight: 500;
+            font-size: 16px;
+            margin-bottom: 0;
+            color: #000000;
+        }
+
+        .testimony-wrap .position {
+            font-size: 13px;
+        }
+
+
+
+        .testimony-section {
+            position: relative;
+        }
+
+        .testimony-section .owl-carousel {
+            margin: 0;
+        }
+
+        .testimony-section .owl-carousel .owl-stage-outer {
+            padding-bottom: 2em;
+            position: relative;
+        }
+
+
+
+        .ftco-section {
+            position: relative;
+            width: 100%;
+            display: block;
+        }
+
+        .ftco-section .nav-pills p {
+            margin-bottom: 0;
+        }
+
+        .ftco-section .nav-pills .nav-link {
+            border-radius: 0;
+            margin-bottom: 0;
+            font-size: 18px;
+            font-weight: 400;
+            position: relative;
+            display: inline-block;
+            margin-left: 5px;
+            margin-right: 5px;
+            color: #b3b3b3;
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            -ms-border-radius: 30px;
+            border-radius: 30px;
+        }
+
+        .ftco-section .nav-pills .nav-link:hover {
+            color: #000000;
+        }
+
+        .ftco-section .nav-pills .nav-link.active {
+            color: #fff;
+            -moz-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            -webkit-transition: all 0.3s ease;
+            -ms-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+        }
+
+        .ftco-section .nav-pills .nav-link.active:after {
+            opacity: 1;
+        }
+
+        @media (max-width: 767.98px) {
+            .ftco-section .nav-pills .nav-link.active:after {
+                opacity: 0;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            .ftco-section .nav-pills .nav-link {
+                display: block;
+                width: 100%;
+                margin-bottom: 5px;
+            }
+        }
+
+        .ftco-section .tab-content .tab-pane h2 {
+            font-size: 24px;
+        }
+
+        .ftco-section .tab-content .tab-pane .one-forth {
+            width: 50%;
+        }
+
+        .ftco-section .tab-content .tab-pane .one-forth img {
+            -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.03);
+            -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.03);
+            box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.03);
+        }
+
+        @media (max-width: 767.98px) {
+            .ftco-section .tab-content .tab-pane .one-forth img {
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            .ftco-section .tab-content .tab-pane .one-forth {
+                width: 100%;
+            }
+        }
+
+        .ftco-section .tab-content .tab-pane .one-half {
+            width: 50%;
+        }
+
+        @media (max-width: 767.98px) {
+            .ftco-section .tab-content .tab-pane .one-half {
+                width: 100%;
+            }
+        }
+
+        .heading-section .subheading {
+            font-size: 14px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .heading-section h2 {
+            font-size: 30px;
+            font-weight: 300;
+        }
+
+        .heading-section h2 strong {
+            font-weight: 700;
+        }
+
+        @media (max-width: 767.98px) {
+            .heading-section h2 {
+                font-size: 28px;
+            }
+        }
+
+        .user-img {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        @import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .blog-slider {
+            width: 95%;
+            position: relative;
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+            padding: 25px;
+            border-radius: 25px;
+            height: 400px;
+            transition: all .3s;
+        }
+
+        @media screen and (max-width: 992px) {
+            .blog-slider {
+                max-width: 680px;
+                height: 400px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .blog-slider {
+                min-height: 500px;
+                height: auto;
+                margin: 180px auto;
+            }
+        }
+
+        @media screen and (max-height: 500px) and (min-width: 992px) {
+            .blog-slider {
+                height: 350px;
+            }
+        }
+
+        .blog-slider__item {
+            display: flex;
+            align-items: center;
+        }
+
+        @media screen and (max-width: 768px) {
+            .blog-slider__item {
+                flex-direction: column;
+            }
+        }
+
+        .blog-slider__item.swiper-slide-active .blog-slider__img img {
+            opacity: 1;
+            transition-delay: .3s;
+        }
+
+        .blog-slider__item.swiper-slide-active .blog-slider__content>* {
+            opacity: 1;
+            transform: none;
+        }
+
+        .blog-slider__item.swiper-slide-active .blog-slider__content>*:nth-child(1) {
+            transition-delay: 0.3s;
+        }
+
+        .blog-slider__item.swiper-slide-active .blog-slider__content>*:nth-child(2) {
+            transition-delay: 0.4s;
+        }
+
+        .blog-slider__item.swiper-slide-active .blog-slider__content>*:nth-child(3) {
+            transition-delay: 0.5s;
+        }
+
+        .blog-slider__item.swiper-slide-active .blog-slider__content>*:nth-child(4) {
+            transition-delay: 0.6s;
+        }
+
+        .blog-slider__item.swiper-slide-active .blog-slider__content>*:nth-child(5) {
+            transition-delay: 0.7s;
+        }
+
+        .blog-slider__item.swiper-slide-active .blog-slider__content>*:nth-child(6) {
+            transition-delay: 0.8s;
+        }
+
+        .blog-slider__item.swiper-slide-active .blog-slider__content>*:nth-child(7) {
+            transition-delay: 0.9s;
+        }
+
+        .blog-slider__item.swiper-slide-active .blog-slider__content>*:nth-child(8) {
+            transition-delay: 1s;
+        }
+
+        .blog-slider__item.swiper-slide-active .blog-slider__content>*:nth-child(9) {
+            transition-delay: 1.1s;
+        }
+
+        .blog-slider__item.swiper-slide-active .blog-slider__content>*:nth-child(10) {
+            transition-delay: 1.2s;
+        }
+
+        .blog-slider__item.swiper-slide-active .blog-slider__content>*:nth-child(11) {
+            transition-delay: 1.3s;
+        }
+
+        .blog-slider__item.swiper-slide-active .blog-slider__content>*:nth-child(12) {
+            transition-delay: 1.4s;
+        }
+
+        .blog-slider__item.swiper-slide-active .blog-slider__content>*:nth-child(13) {
+            transition-delay: 1.5s;
+        }
+
+        .blog-slider__item.swiper-slide-active .blog-slider__content>*:nth-child(14) {
+            transition-delay: 1.6s;
+        }
+
+        .blog-slider__item.swiper-slide-active .blog-slider__content>*:nth-child(15) {
+            transition-delay: 1.7s;
+        }
+
+        .blog-slider__img {
+            width: 300px;
+            flex-shrink: 0;
+            height: 300px;
+            background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
+            border-radius: 20px;
+            transform: translateX(-80px);
+            overflow: hidden;
+        }
+
+        .blog-slider__img:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            opacity: 0.8;
+        }
+
+        .blog-slider__img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            opacity: 0;
+            border-radius: 20px;
+            transition: all .3s;
+        }
+
+        @media screen and (max-width: 768px) {
+            .blog-slider__img {
+                transform: translateY(-50%);
+                width: 90%;
+            }
+        }
+
+        @media screen and (max-width: 576px) {
+            .blog-slider__img {
+                width: 95%;
+            }
+        }
+
+        @media screen and (max-height: 500px) and (min-width: 992px) {
+            .blog-slider__img {
+                height: 270px;
+            }
+        }
+
+        .blog-slider__content {
+            padding-right: 25px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .blog-slider__content {
+                margin-top: -80px;
+                text-align: center;
+                padding: 0 30px;
+            }
+        }
+
+        @media screen and (max-width: 576px) {
+            .blog-slider__content {
+                padding: 0;
+            }
+        }
+
+        .blog-slider__content>* {
+            opacity: 0;
+            transform: translateY(25px);
+            transition: all .4s;
+        }
+
+        .blog-slider__code {
+            color: #7b7992;
+            margin-bottom: 15px;
+            display: block;
+            font-weight: 500;
+        }
+
+        .blog-slider__title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #0d0925;
+            margin-bottom: 20px;
+        }
+
+        .blog-slider__text {
+            color: #4e4a67;
+            margin-bottom: 30px;
+            line-height: 1.5em;
+        }
+
+        .blog-slider__button {
+            display: inline-flex;
+            background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
+            padding: 15px 35px;
+            border-radius: 50px;
+            color: #fff;
+            box-shadow: 0px 14px 80px rgba(252, 56, 56, 0.4);
+            text-decoration: none;
+            font-weight: 500;
+            justify-content: center;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+
+        @media screen and (max-width: 576px) {
+            .blog-slider__button {
+                width: 100%;
+            }
+        }
+
+        .blog-slider .swiper-container-horizontal>.swiper-pagination-bullets,
+        .blog-slider .swiper-pagination-custom,
+        .blog-slider .swiper-pagination-fraction {
+            bottom: 10px;
+            left: 0;
+            width: 100%;
+        }
+
+        .blog-slider__pagination {
+            position: absolute;
+            z-index: 21;
+            right: 20px;
+            width: 11px !important;
+            text-align: center;
+            left: auto !important;
+            top: 50%;
+            bottom: auto !important;
+            transform: translateY(-50%);
+        }
+
+        @media screen and (max-width: 768px) {
+            .blog-slider__pagination {
+                transform: translateX(-50%);
+                left: 50% !important;
+                top: 205px;
+                width: 100% !important;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        .blog-slider__pagination.swiper-pagination-bullets .swiper-pagination-bullet {
+            margin: 8px 0;
+        }
+
+        @media screen and (max-width: 768px) {
+            .blog-slider__pagination.swiper-pagination-bullets .swiper-pagination-bullet {
+                margin: 0 5px;
+            }
+        }
+
+        .blog-slider__pagination .swiper-pagination-bullet {
+            width: 11px;
+            height: 11px;
+            display: block;
+            border-radius: 10px;
+            background: #062744;
+            opacity: 0.2;
+            transition: all .3s;
+        }
+
+        .blog-slider__pagination .swiper-pagination-bullet-active {
+            opacity: 1;
+            background: #fd3838;
+            height: 30px;
+            box-shadow: 0px 0px 20px rgba(252, 56, 56, 0.3);
+        }
+
+        @media screen and (max-width: 768px) {
+            .blog-slider__pagination .swiper-pagination-bullet-active {
+                height: 11px;
+                width: 30px;
+            }
+        }
+
+        .imagepawan {
+            background-image: url('img/travel.jpg');
+
+        }
+
+        @media screen and (max-width: 767px) {
+            .imagepawan {
+                background-image: url('img/aeroplane.jpg');
+            }
+        }
+
+    </style>
+
+<style type="text/css">.keyword-info-container {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 12px;
+  border-bottom: 1px solid #DEE1E5;
+}
+
+.keyword-info-container.youtube {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.keyword-info-container .title {
+	color: #26282D;
+	font-size: 17px;
+  font-weight: bold;
+}
+
+.keyword-info-container .tabs {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 1px solid #DEE1E5;
+  margin-top: -10px;
+  padding: 0px 16px;
+  align-items: center;
+}
+.keyword-info-container .tabs li {
+  padding: 8px;
+  padding-left: 0;
+  color: #000;
+  cursor: pointer;
+  font-size: 12px;
+}
+.keyword-info-container .tabs li.small {
+  font-size: 10px;
+}
+.keyword-info-container .tabs li:last-child {
+  overflow: hidden;
+}
+
+.keyword-info-container .tabs li.active {
+  color: #4285F4;
+}
+
+table.keyword-info-table {
+  border-collapse: collapse;
+  width: 100%;
+  color: #000;
+  font-size: 12px;
+  position: relative;
+}
+
+.keyword-info-table thead {
+  height: 50px;
+}
+
+.keyword-info-table th {
+  padding: 10px;
+  padding-left: 0;
+  font-weight: bold;
+  color: #000000;
+  font-size: 12px;
+}
+
+.keyword-info-table th:first-child {
+  padding-left: 16px;
+}
+
+.keyword-info-table th:last-child {
+  padding-right: 16px;
+}
+
+.keyword-info-table td {
+  border-bottom: 1px solid #DEE1E5;
+  padding: 10px;
+  padding-left: 0;
+}
+
+.keyword-info-table td:first-child {
+  padding-left: 16px;
+}
+
+.keyword-info-table td:last-child {
+  padding-right: 16px;
+}
+
+.keyword-info-table tfoot tr {
+  background-color: #DEE1E544;
+}
+
+.keyword-info-table tfoot tr:last-child td{
+  border-bottom: none;
+}
+
+.ubersuggest-button {
+  color: #0086F7;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 29px;
+  padding: 8px 30px;
+  border: 1px solid #0086F7;
+  background-color: #FFFFFF;
+  border-radius: 2px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin: 4px;
+}
+
+.ubersuggest-logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 10px 10px 0 0;
+  font-weight: bold;
+  color: #26282D;
+}
+
+.ubersuggest-logo {
+  width: 182px;
+  height: 33px;
+  cursor: pointer;
+}
+
+.keyword-info-container .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 20px 16px;
+  border-top: 1px solid #DEE1E5;
+}
+
+.header h2 {
+  color: #000000;
+  font-family: Geomanist;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+html[dark] .keyword-info-container .title {
+  color: #fff;
+}
+
+html[dark] .keyword-info-container .tabs {
+  border-color: #ffffff0d;
+}
+
+html[dark] .keyword-info-container .tabs li {
+  color: #fff;
+}
+
+html[dark] .keyword-info-container .tabs li.active {
+  color: #4285F4;
+}
+
+html[dark] table.keyword-info-table {
+  color: #fff;
+}
+
+html[dark] .keyword-info-table th {
+  color: #fff;
+}
+
+html[dark] .keyword-info-table tfoot tr {
+  background-color: #3D3D3D;
+}
+
+html[dark] .keyword-info-table tfoot tr:last-child td .button-arrow{
+  border-color: #fff;
+}
+
+
+</style><style type="text/css">.tippy-touch{cursor:pointer!important}.tippy-notransition{transition:none!important}.tippy-popper{max-width:400px;-webkit-perspective:800px;perspective:800px;z-index:9999;outline:0;transition-timing-function:cubic-bezier(.165,.84,.44,1);pointer-events:none}.tippy-popper.html-template{max-width:96%;max-width:calc(100% - 20px)}.tippy-popper[x-placement^=top] [x-arrow]{border-top:7px solid #333;border-right:7px solid transparent;border-left:7px solid transparent;bottom:-7px;margin:0 9px}.tippy-popper[x-placement^=top] [x-arrow].arrow-small{border-top:5px solid #333;border-right:5px solid transparent;border-left:5px solid transparent;bottom:-5px}.tippy-popper[x-placement^=top] [x-arrow].arrow-big{border-top:10px solid #333;border-right:10px solid transparent;border-left:10px solid transparent;bottom:-10px}.tippy-popper[x-placement^=top] [x-circle]{-webkit-transform-origin:0 33%;transform-origin:0 33%}.tippy-popper[x-placement^=top] [x-circle].enter{-webkit-transform:scale(1) translate(-50%,-55%);transform:scale(1) translate(-50%,-55%);opacity:1}.tippy-popper[x-placement^=top] [x-circle].leave{-webkit-transform:scale(.15) translate(-50%,-50%);transform:scale(.15) translate(-50%,-50%);opacity:0}.tippy-popper[x-placement^=top] .tippy-tooltip.light-theme [x-circle]{background-color:#fff}.tippy-popper[x-placement^=top] .tippy-tooltip.light-theme [x-arrow]{border-top:7px solid #fff;border-right:7px solid transparent;border-left:7px solid transparent}.tippy-popper[x-placement^=top] .tippy-tooltip.light-theme [x-arrow].arrow-small{border-top:5px solid #fff;border-right:5px solid transparent;border-left:5px solid transparent}.tippy-popper[x-placement^=top] .tippy-tooltip.light-theme [x-arrow].arrow-big{border-top:10px solid #fff;border-right:10px solid transparent;border-left:10px solid transparent}.tippy-popper[x-placement^=top] .tippy-tooltip.transparent-theme [x-circle]{background-color:rgba(0,0,0,.7)}.tippy-popper[x-placement^=top] .tippy-tooltip.transparent-theme [x-arrow]{border-top:7px solid rgba(0,0,0,.7);border-right:7px solid transparent;border-left:7px solid transparent}.tippy-popper[x-placement^=top] .tippy-tooltip.transparent-theme [x-arrow].arrow-small{border-top:5px solid rgba(0,0,0,.7);border-right:5px solid transparent;border-left:5px solid transparent}.tippy-popper[x-placement^=top] .tippy-tooltip.transparent-theme [x-arrow].arrow-big{border-top:10px solid rgba(0,0,0,.7);border-right:10px solid transparent;border-left:10px solid transparent}.tippy-popper[x-placement^=top] [data-animation=perspective]{-webkit-transform-origin:bottom;transform-origin:bottom}.tippy-popper[x-placement^=top] [data-animation=perspective].enter{opacity:1;-webkit-transform:translateY(-10px) rotateX(0);transform:translateY(-10px) rotateX(0)}.tippy-popper[x-placement^=top] [data-animation=perspective].leave{opacity:0;-webkit-transform:translateY(0) rotateX(90deg);transform:translateY(0) rotateX(90deg)}.tippy-popper[x-placement^=top] [data-animation=fade].enter{opacity:1;-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=fade].leave{opacity:0;-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=shift].enter{opacity:1;-webkit-transform:translateY(-10px);transform:translateY(-10px)}.tippy-popper[x-placement^=top] [data-animation=shift].leave{opacity:0;-webkit-transform:translateY(0);transform:translateY(0)}.tippy-popper[x-placement^=top] [data-animation=scale].enter{opacity:1;-webkit-transform:translateY(-10px) scale(1);transform:translateY(-10px) scale(1)}.tippy-popper[x-placement^=top] [data-animation=scale].leave{opacity:0;-webkit-transform:translateY(0) scale(0);transform:translateY(0) scale(0)}.tippy-popper[x-placement^=bottom] [x-arrow]{border-bottom:7px solid #333;border-right:7px solid transparent;border-left:7px solid transparent;top:-7px;margin:0 9px}.tippy-popper[x-placement^=bottom] [x-arrow].arrow-small{border-bottom:5px solid #333;border-right:5px solid transparent;border-left:5px solid transparent;top:-5px}.tippy-popper[x-placement^=bottom] [x-arrow].arrow-big{border-bottom:10px solid #333;border-right:10px solid transparent;border-left:10px solid transparent;top:-10px}.tippy-popper[x-placement^=bottom] [x-circle]{-webkit-transform-origin:0 -50%;transform-origin:0 -50%}.tippy-popper[x-placement^=bottom] [x-circle].enter{-webkit-transform:scale(1) translate(-50%,-45%);transform:scale(1) translate(-50%,-45%);opacity:1}.tippy-popper[x-placement^=bottom] [x-circle].leave{-webkit-transform:scale(.15) translate(-50%,-5%);transform:scale(.15) translate(-50%,-5%);opacity:0}.tippy-popper[x-placement^=bottom] .tippy-tooltip.light-theme [x-circle]{background-color:#fff}.tippy-popper[x-placement^=bottom] .tippy-tooltip.light-theme [x-arrow]{border-bottom:7px solid #fff;border-right:7px solid transparent;border-left:7px solid transparent}.tippy-popper[x-placement^=bottom] .tippy-tooltip.light-theme [x-arrow].arrow-small{border-bottom:5px solid #fff;border-right:5px solid transparent;border-left:5px solid transparent}.tippy-popper[x-placement^=bottom] .tippy-tooltip.light-theme [x-arrow].arrow-big{border-bottom:10px solid #fff;border-right:10px solid transparent;border-left:10px solid transparent}.tippy-popper[x-placement^=bottom] .tippy-tooltip.transparent-theme [x-circle]{background-color:rgba(0,0,0,.7)}.tippy-popper[x-placement^=bottom] .tippy-tooltip.transparent-theme [x-arrow]{border-bottom:7px solid rgba(0,0,0,.7);border-right:7px solid transparent;border-left:7px solid transparent}.tippy-popper[x-placement^=bottom] .tippy-tooltip.transparent-theme [x-arrow].arrow-small{border-bottom:5px solid rgba(0,0,0,.7);border-right:5px solid transparent;border-left:5px solid transparent}.tippy-popper[x-placement^=bottom] .tippy-tooltip.transparent-theme [x-arrow].arrow-big{border-bottom:10px solid rgba(0,0,0,.7);border-right:10px solid transparent;border-left:10px solid transparent}.tippy-popper[x-placement^=bottom] [data-animation=perspective]{-webkit-transform-origin:top;transform-origin:top}.tippy-popper[x-placement^=bottom] [data-animation=perspective].enter{opacity:1;-webkit-transform:translateY(10px) rotateX(0);transform:translateY(10px) rotateX(0)}.tippy-popper[x-placement^=bottom] [data-animation=perspective].leave{opacity:0;-webkit-transform:translateY(0) rotateX(-90deg);transform:translateY(0) rotateX(-90deg)}.tippy-popper[x-placement^=bottom] [data-animation=fade].enter{opacity:1;-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=fade].leave{opacity:0;-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=shift].enter{opacity:1;-webkit-transform:translateY(10px);transform:translateY(10px)}.tippy-popper[x-placement^=bottom] [data-animation=shift].leave{opacity:0;-webkit-transform:translateY(0);transform:translateY(0)}.tippy-popper[x-placement^=bottom] [data-animation=scale].enter{opacity:1;-webkit-transform:translateY(10px) scale(1);transform:translateY(10px) scale(1)}.tippy-popper[x-placement^=bottom] [data-animation=scale].leave{opacity:0;-webkit-transform:translateY(0) scale(0);transform:translateY(0) scale(0)}.tippy-popper[x-placement^=left] [x-arrow]{border-left:7px solid #333;border-top:7px solid transparent;border-bottom:7px solid transparent;right:-7px;margin:6px 0}.tippy-popper[x-placement^=left] [x-arrow].arrow-small{border-left:5px solid #333;border-top:5px solid transparent;border-bottom:5px solid transparent;right:-5px}.tippy-popper[x-placement^=left] [x-arrow].arrow-big{border-left:10px solid #333;border-top:10px solid transparent;border-bottom:10px solid transparent;right:-10px}.tippy-popper[x-placement^=left] [x-circle]{-webkit-transform-origin:50% 0;transform-origin:50% 0}.tippy-popper[x-placement^=left] [x-circle].enter{-webkit-transform:scale(1) translate(-50%,-50%);transform:scale(1) translate(-50%,-50%);opacity:1}.tippy-popper[x-placement^=left] [x-circle].leave{-webkit-transform:scale(.15) translate(-50%,-50%);transform:scale(.15) translate(-50%,-50%);opacity:0}.tippy-popper[x-placement^=left] .tippy-tooltip.light-theme [x-circle]{background-color:#fff}.tippy-popper[x-placement^=left] .tippy-tooltip.light-theme [x-arrow]{border-left:7px solid #fff;border-top:7px solid transparent;border-bottom:7px solid transparent}.tippy-popper[x-placement^=left] .tippy-tooltip.light-theme [x-arrow].arrow-small{border-left:5px solid #fff;border-top:5px solid transparent;border-bottom:5px solid transparent}.tippy-popper[x-placement^=left] .tippy-tooltip.light-theme [x-arrow].arrow-big{border-left:10px solid #fff;border-top:10px solid transparent;border-bottom:10px solid transparent}.tippy-popper[x-placement^=left] .tippy-tooltip.transparent-theme [x-circle]{background-color:rgba(0,0,0,.7)}.tippy-popper[x-placement^=left] .tippy-tooltip.transparent-theme [x-arrow]{border-left:7px solid rgba(0,0,0,.7);border-top:7px solid transparent;border-bottom:7px solid transparent}.tippy-popper[x-placement^=left] .tippy-tooltip.transparent-theme [x-arrow].arrow-small{border-left:5px solid rgba(0,0,0,.7);border-top:5px solid transparent;border-bottom:5px solid transparent}.tippy-popper[x-placement^=left] .tippy-tooltip.transparent-theme [x-arrow].arrow-big{border-left:10px solid rgba(0,0,0,.7);border-top:10px solid transparent;border-bottom:10px solid transparent}.tippy-popper[x-placement^=left] [data-animation=perspective]{-webkit-transform-origin:right;transform-origin:right}.tippy-popper[x-placement^=left] [data-animation=perspective].enter{opacity:1;-webkit-transform:translateX(-10px) rotateY(0);transform:translateX(-10px) rotateY(0)}.tippy-popper[x-placement^=left] [data-animation=perspective].leave{opacity:0;-webkit-transform:translateX(0) rotateY(-90deg);transform:translateX(0) rotateY(-90deg)}.tippy-popper[x-placement^=left] [data-animation=fade].enter{opacity:1;-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=fade].leave{opacity:0;-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=shift].enter{opacity:1;-webkit-transform:translateX(-10px);transform:translateX(-10px)}.tippy-popper[x-placement^=left] [data-animation=shift].leave{opacity:0;-webkit-transform:translateX(0);transform:translateX(0)}.tippy-popper[x-placement^=left] [data-animation=scale].enter{opacity:1;-webkit-transform:translateX(-10px) scale(1);transform:translateX(-10px) scale(1)}.tippy-popper[x-placement^=left] [data-animation=scale].leave{opacity:0;-webkit-transform:translateX(0) scale(0);transform:translateX(0) scale(0)}.tippy-popper[x-placement^=right] [x-arrow]{border-right:7px solid #333;border-top:7px solid transparent;border-bottom:7px solid transparent;left:-7px;margin:6px 0}.tippy-popper[x-placement^=right] [x-arrow].arrow-small{border-right:5px solid #333;border-top:5px solid transparent;border-bottom:5px solid transparent;left:-5px}.tippy-popper[x-placement^=right] [x-arrow].arrow-big{border-right:10px solid #333;border-top:10px solid transparent;border-bottom:10px solid transparent;left:-10px}.tippy-popper[x-placement^=right] [x-circle]{-webkit-transform-origin:-50% 0;transform-origin:-50% 0}.tippy-popper[x-placement^=right] [x-circle].enter{-webkit-transform:scale(1) translate(-50%,-50%);transform:scale(1) translate(-50%,-50%);opacity:1}.tippy-popper[x-placement^=right] [x-circle].leave{-webkit-transform:scale(.15) translate(-50%,-50%);transform:scale(.15) translate(-50%,-50%);opacity:0}.tippy-popper[x-placement^=right] .tippy-tooltip.light-theme [x-circle]{background-color:#fff}.tippy-popper[x-placement^=right] .tippy-tooltip.light-theme [x-arrow]{border-right:7px solid #fff;border-top:7px solid transparent;border-bottom:7px solid transparent}.tippy-popper[x-placement^=right] .tippy-tooltip.light-theme [x-arrow].arrow-small{border-right:5px solid #fff;border-top:5px solid transparent;border-bottom:5px solid transparent}.tippy-popper[x-placement^=right] .tippy-tooltip.light-theme [x-arrow].arrow-big{border-right:10px solid #fff;border-top:10px solid transparent;border-bottom:10px solid transparent}.tippy-popper[x-placement^=right] .tippy-tooltip.transparent-theme [x-circle]{background-color:rgba(0,0,0,.7)}.tippy-popper[x-placement^=right] .tippy-tooltip.transparent-theme [x-arrow]{border-right:7px solid rgba(0,0,0,.7);border-top:7px solid transparent;border-bottom:7px solid transparent}.tippy-popper[x-placement^=right] .tippy-tooltip.transparent-theme [x-arrow].arrow-small{border-right:5px solid rgba(0,0,0,.7);border-top:5px solid transparent;border-bottom:5px solid transparent}.tippy-popper[x-placement^=right] .tippy-tooltip.transparent-theme [x-arrow].arrow-big{border-right:10px solid rgba(0,0,0,.7);border-top:10px solid transparent;border-bottom:10px solid transparent}.tippy-popper[x-placement^=right] [data-animation=perspective]{-webkit-transform-origin:left;transform-origin:left}.tippy-popper[x-placement^=right] [data-animation=perspective].enter{opacity:1;-webkit-transform:translateX(10px) rotateY(0);transform:translateX(10px) rotateY(0)}.tippy-popper[x-placement^=right] [data-animation=perspective].leave{opacity:0;-webkit-transform:translateX(0) rotateY(90deg);transform:translateX(0) rotateY(90deg)}.tippy-popper[x-placement^=right] [data-animation=fade].enter{opacity:1;-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=fade].leave{opacity:0;-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=shift].enter{opacity:1;-webkit-transform:translateX(10px);transform:translateX(10px)}.tippy-popper[x-placement^=right] [data-animation=shift].leave{opacity:0;-webkit-transform:translateX(0);transform:translateX(0)}.tippy-popper[x-placement^=right] [data-animation=scale].enter{opacity:1;-webkit-transform:translateX(10px) scale(1);transform:translateX(10px) scale(1)}.tippy-popper[x-placement^=right] [data-animation=scale].leave{opacity:0;-webkit-transform:translateX(0) scale(0);transform:translateX(0) scale(0)}.tippy-popper .tippy-tooltip.transparent-theme{background-color:rgba(0,0,0,.7)}.tippy-popper .tippy-tooltip.transparent-theme[data-animatefill]{background-color:transparent}.tippy-popper .tippy-tooltip.light-theme{color:#26323d;box-shadow:0 4px 20px 4px rgba(0,20,60,.1),0 4px 80px -8px rgba(0,20,60,.2);background-color:#fff}.tippy-popper .tippy-tooltip.light-theme[data-animatefill]{background-color:transparent}.tippy-tooltip{position:relative;color:#fff;border-radius:4px;font-size:.95rem;padding:.4rem .8rem;text-align:center;will-change:transform;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;background-color:#333}.tippy-tooltip--small{padding:.25rem .5rem;font-size:.8rem}.tippy-tooltip--big{padding:.6rem 1.2rem;font-size:1.2rem}.tippy-tooltip[data-animatefill]{overflow:hidden;background-color:transparent}.tippy-tooltip[data-interactive]{pointer-events:auto}.tippy-tooltip[data-inertia]{transition-timing-function:cubic-bezier(.53,2,.36,.85)}.tippy-tooltip [x-arrow]{position:absolute;width:0;height:0}.tippy-tooltip [x-circle]{position:absolute;will-change:transform;background-color:#333;border-radius:50%;width:130%;width:calc(110% + 2rem);left:50%;top:50%;z-index:-1;overflow:hidden;transition:all ease}.tippy-tooltip [x-circle]:before{content:"";padding-top:90%;float:left}@media (max-width:450px){.tippy-popper{max-width:96%;max-width:calc(100% - 20px)}}
+</style><style type="text/css">.ubersuggest-header-container {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 12px;
+}
+
+.ubersuggest-header-container .row {
+  margin: 0;
+  padding: 15px 16px 15px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.ue-enable {
+  display: block;
+}
+
+.ue-disable {
+  display: none;
+}
+
+.ubersuggest-header-container .settings {
+  display: flex;
+  align-items: center;
+  margin-right: 18px;
+}
+.ubersuggest-header-container .settings-label {
+  margin-right: 21px;
+}
+
+.ubersuggest-header-container .settings-icon {
+  width: 21px;
+  height: 21px;
+  margin-right: 7px;
+}
+</style><style type="text/css">.keyword-info-section {
+  color: #26282D;
+  font-family: Arial;
+  font-size: 12px;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.keyword-info-section.youtube{
+  padding: 6px 0;
+  margin-right: 15px;
+}
+
+.keyword-info-section.amazon{
+  padding: 13px 0;
+}
+</style><style type="text/css">.kw-overview-container {
+  box-sizing: border-box;
+  width: 673px;
+  padding: 0;
+  margin: 0;
+  margin-top: 14px;
+  font-size: 12px;
+}
+.kw-overview-container.youtube {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+}
+</style><style type="text/css">.bl-info-container {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+}
+.bl-info-header {
+  display: flex;
+  height: 24px;
+  width: 100%;
+  padding: 0;
+  justify-content: space-between;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+}
+
+.bl-info-header .row {
+  display: flex;
+  margin: 0;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.bl-info-header .row.youtube {
+  justify-content: flex-start;
+}
+
+.bl-info-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #DEE1E5;
+  border-radius: 8px;
+  padding-top: 0;
+}
+
+.bl-info-content img.loading{
+  width: 50px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+table.bl-info-table {
+  border-collapse: collapse;
+  width: 100%;
+  color: #808185;
+  font-size: 12px;
+}
+
+.bl-info-table thead {
+  height: 50px;
+}
+
+.bl-info-table tr {
+  width: 100%;
+  max-width: 600px;
+}
+
+.bl-info-table th {
+  padding: 10px;
+  padding-left: 0;
+  font-weight: bold;
+  color: #000000;
+  font-size: 11px;
+  border-bottom: 1px solid #DEE1E5;
+}
+.bl-info-table th:first-child {
+  padding-left: 16px;
+}
+
+.bl-info-table th:last-child {
+  border-right: none;
+  padding-right: 16px;
+}
+
+
+.bl-info-table td {
+  border-bottom: 1px solid #DEE1E5;
+  padding: 10px;
+  padding-left: 0;
+  max-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #000;
+}
+
+.bl-info-table td:first-child {
+  border-left: none;
+  padding-left: 16px;
+}
+
+.bl-info-table td:last-child {
+  border-right: none;
+  padding-right: 16px;
+}
+
+.bl-info-table tfoot tr:last-child td {
+  border-bottom: none;
+}
+
+.bl-info-container .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+</style><style type="text/css">.statistics-graph-container {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 5px;
+  font-size: 12px;
+  padding: 0px 16px;
+}
+
+.statistics-graph-container .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0 20px 0;
+}
+
+.statistics-graph-container .row .title {
+	color: #26282D;
+	font-size: 17px;
+  font-weight: bold;
+}
+
+.statistics-graph-container .tabs {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 1px solid #DEE1E5;
+  margin: 0 -16px;
+  margin-bottom: 10px;
+  margin-top: -10px;
+  padding: 0px 16px;
+}
+
+.statistics-graph-container .tabs li {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  color: #000;
+  cursor: pointer;
+  font-size: 13px;
+  border-bottom: 3px solid transparent;
+}
+
+.statistics-graph-container .tabs li:first-child {
+  margin-left: -16px;
+}
+
+.statistics-graph-container .tabs li.active {
+  color: #4285F4;
+  border-bottom: 3px solid #4285F4;
+}</style></head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/1.1.png"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">LOCATIONS</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="register.html">REGISTER</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    
+        <div class="text-box">
+            <h1 style="color:rgb(249, 249, 250);">Welcome to Rajasthan</h1>
+            <h4 style="color:rgb(249, 249, 250);"><b>पधारो म्हारे देश</b></h4>
+            <br>
+            <br>
+            <br>
+             <a href="contact.html" class="hero-btn">Visit Us to Know More</a>
+        </div>
+    
+    </section>
+
+
+
+    <div class="container block block-secondary app-block-marketing-grid">
+
+        <div class="container text-xs-center" style="display: flex; flex-wrap: wrap;">
+            <a id="more">
+                <div class="container text-xs-center" style="margin-bottom: 30px;">
+                    <p style="font-size: 30px; color: black; font-weight: bold;">Rajasthan tour packages (INDIA) </p>
+                </div>
+            </a>
+
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/dargiling.jpg">
+                </div>
+                <div class="content" style="text-align:left;">
+                    <h3>JAIPUR <Br>TOUR PACKAGE</h3>
+                    <p>
+
+                        </p><li>Places We Will Cover -</li>
+                        <li> Amer fort, Mavtha Lake, Jal Mahal, Hawa Mahal,  Albert Hall Museum.</li>
+                        <li>Nahargarh Fort, Jaigarh Fort, Kanak Garden, City Palace, Jantar Mantar. </li>
+                        <li> 1 Night/2 Days  </li>
+                        <li> ₹ 6000 / per person </li>
+                        <li>many more. . .</li>
+                        <li> Call Us For Booking at 8209776417</li>
+
+
+
+
+
+                    <p></p>
+                    <br>
+                    
+                    <a href="booking-form.html" class="details btn btn-info">
+                        <p style="padding-bottom: 10px;"> Book Now </p>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/shimla.jpg">
+                </div>
+                <div class="content" style="text-align:left;">
+                    <h3>UDAIPUR TOUR PACKAGE</h3>
+                    <br>
+                    <p>
+
+                        </p><li>Places We Will Cover -</li>
+                        <li>City Palace Udaipur, Pichola Lake, Shri Ekling Ji Temple</li>
+                        <li style="text-transform: uppercase;">Sajjangarh Palace, Sahelion Ki Bari, Fateh Sagar Lake, Ambrai Ghat, Bagore Ki Haveli.</li>
+                        <li style="text-transform: uppercase;">and many more . .</li>
+                        <li>₹ 7000 / per person</li>
+                        <li>1 Night/2 Days </li>
+                        <li> Call Us For Booking at 8209776417</li>
+
+
+                    <p></p>
+                       <br>
+                       
+                    <a href="booking-form.html" class="details btn btn-info">
+                        <p style="padding-bottom: 10px;"> Book Now </p>
+                    </a>
+
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/nainital.jpg">
+                </div>
+                <div class="content" style="text-align:left;">
+                    <h3>JAISALMER TOUR PACKAGE</h3>
+                    <br>
+
+                    <p>
+                        </p><li>Places We Will Cover - Jaisalmer Fort, 
+                            Tanot Mata Temple, War Museum. </li>
+                        <li>Desert National Park, NightCamp At Desert, Kuldhara Village,
+                             Salim Singh ki Haveli, Indo-Pak Border.</li> 
+                        <li>1 Night/2 Days</li>
+                        <li>₹ 5000 / per person</li>
+                        <li> Call Us For Booking at 8209776417</li>
+                        <br>
+                        <br>
+                    <p></p>
+                    <a href="booking-form.html" class="details btn btn-info">
+                        <p style="padding-bottom: 10px;"> Book Now </p>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/kerala.jpg">
+                </div>
+                <div class="content" style="text-align:left;">
+                    <h3> RANTHAMBORE TOUR PACKAGE </h3>
+                    <p>
+                        </p><li>Places We Will Cover - Ranthambore National Park Safari, Ranthambore Fort.</li>
+
+                        <li> Khandar Fort, Soleshwar Mahadev, Jojeshwar Mahadev, Amreshwar Mahadev.</li>
+
+                        <li>2 Night/3 Days</li>
+                        <li>₹ 9000 / per person</li>
+                        <li> Call Us For Booking at 8209776417</li>
+
+                    <p></p>
+                    <br>
+                    <br>
+                    
+
+                    <a href="booking-form.html" class="details btn btn-info">
+                        <p style="padding-bottom: 10px;"> Book Now </p>
+                    </a>
+
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="img/andman.jpg">
+                </div>
+                <div class="content" style="text-align:left;">
+                    <h3>MOUNT ABU TOUR PACKAGE</h3>
+                    <p>
+                        </p><li> Places We Will Cover - </li>
+                        <li> Nakki Lake, Guru Shikhar, Toad Rock, Dilwara Temple. </li>
+                        <li> Sunset Point, Honeymoon Point, Trevor's Tank, Achalgarh Fort.</li>
+                        <li> 1 Night/2 Days</li>
+                        <li>₹ 5000 / per person</li>
+                        <li> Call Us For Booking at 8209776417</li>
+
+                    <p></p>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="booking-form.html" class="details btn btn-info">
+                        <p style="padding-bottom: 10px;"> Book Now </p>
+                    </a>
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+    <section id="about-us" class="ftco-section testimony-section bg-light">
+        <div class="container">
+            <div class="row justify-content-start">
+                <div class="col-md-5 heading-section ftco-animate">
+                    <!-- <span class="subheading">Best tour Website</span> -->
+                    <h2 class="mb-4 pb-3"><strong>Why</strong> Choose Us?</h2>
+
+                    <p>Our thoughtful team of knowledgeable experts are here to take care of every need, from the second you contact us to when you return.</p>
+
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-6 heading-section ftco-animate">
+                    <!-- <span class="subheading">Testimony</span> -->
+                    <h2 class="mb-4 pb-3"><strong>What</strong> our Guests Says</h2>
+                    <div class="row ftco-animate">
+                        <div class="col-md-12">
+                            <div class="carousel-testimony owl-carousel">
+                                <div class="item">
+                                    <div class="testimony-wrap d-flex">
+                                        <div class="user-img mb-5" style="background-image: url(); ">
+                                            <span class="quote d-flex align-items-center justify-content-center">
+                                                <i class="icon-quote-left"></i>
+                                            </span>
+                                        </div>
+                                        <div class="text ml-md-4">
+                                            <p class="mb-5"> I HAD GREAT TIME WITH FAMILY AND ENJOYED THE TRIP. THANKS VIP TOUR FOR THE WONDERFUL EXPERIENCE. </p>
+                                            <p class="name">Saurabh nagori</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="testimony-wrap d-flex">
+                                        <div class="user-img mb-5" style="background-image: url()">
+                                            <span class="quote d-flex align-items-center justify-content-center">
+                                                <i class="icon-quote-left"></i>
+                                            </span>
+                                        </div>
+                                        <div class="text ml-md-4">
+                                            <p class="mb-5">I am very thankful to the Vip Tour for making my Rajasthan experience a memorable one with their an amazingly designed rajasthan tour package. </p>
+                                            <p class="name"> Manish bhatt</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="testimony-wrap d-flex">
+                                        <div class="user-img mb-5" style="background-image: url()">
+                                            <span class="quote d-flex align-items-center justify-content-center">
+                                                <i class="icon-quote-left"></i>
+                                            </span>
+                                        </div>
+                                        <div class="text ml-md-4">
+                                            <p class="mb-5">.</p>
+                                            <p class="name">Naveen kumawat</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <section class="ftco-section services-section bg-light" style="margin-top: -120px;">
+        <div class="container">
+            <h2 class="text-xs-center" style="color: #F85959; text-transform: uppercase;"> Rajasthan travel packages at best price with vip tour.
+            </h2>
+            <div class="row d-flex">
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services d-block text-center">
+                        <div class="d-flex justify-content-center">
+                            <div class="icon"><span class="flaticon-guarantee"></span></div>
+                        </div>
+                        <div class="media-body p-2 mt-2">
+                            <h3 class="heading mb-3">Best Price Guarantee</h3>
+                            <p>"Price is what you pay. Value is what you get."- Warren Buffett</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services d-block text-center">
+                        <div class="d-flex justify-content-center">
+                            <div class="icon"><span class="flaticon-like"></span></div>
+                        </div>
+                        <div class="media-body p-2 mt-2">
+                            <h3 class="heading mb-3">Travellers Love Us</h3>
+                            <p>Let's find some beautiful place to get lost.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services d-block text-center">
+                        <div class="d-flex justify-content-center">
+                            <div class="icon"><span class="flaticon-detective"></span></div>
+                        </div>
+                        <div class="media-body p-2 mt-2">
+                            <h3 class="heading mb-3">Best Travel Agent</h3>
+                            <p>Always delivered more than expected.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services d-block text-center">
+                        <div class="d-flex justify-content-center">
+                            <div class="icon"><span class="flaticon-support"></span></div>
+                        </div>
+                        <div class="media-body p-2 mt-2">
+                            <h3 class="heading mb-3">Our Dedicated Support</h3>
+                            <p>We always ready for you to help, call us anytime at +918209776417.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <a name="contact">
+
+        <div class="block block-inverse app-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 mb-5">
+                        <ul class="list-unstyled list-spaced">
+                            <li class="mb-2">
+                                <h6 class="text-uppercase">About</h6>
+                            </li>
+                            <li class="text-muted">
+                                Vip tour is a specialist tour operator. We focus on creating magical tailor-made journeys that bring travel &amp; places alive and don't scrimp on the smiles. Born in chittorgarh, Rajasthan(India).
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 offset-md-1 mb-5">
+                        <ul class="list-unstyled list-spaced">
+                            <li class="mb-2">
+                                <h6 class="text-uppercase"></h6>
+                            </li>
+                            <li class="text-muted"></li>
+                            <li class="text-muted"></li>
+                            <li class="text-muted"></li>
+                            <li class="text-muted"></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 mb-5">
+                        <ul class="list-unstyled list-spaced">
+                            <li class="mb-2">
+                                <h6 class="text-uppercase"></h6>
+                            </li>
+                            <li class="text-muted"></li>
+                            <li class="text-muted"></li>
+                            <li class="text-muted"></li>
+                            <li class="text-muted"></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 mb-5">
+                        <ul class="list-unstyled list-spaced">
+                            <li class="mb-2">
+                                <h6 class="text-uppercase">Contact us</h6>
+                            </li>
+                            <li class="text-muted">JECRC University</li>
+                            <li class="text-muted">adi@gmail.com</li>
+                            <li class="text-muted">nik@gmail.com</li>
+                            <li class="text-muted">Mob. 8209776417</li>
+                        </ul>
+                    </div>
+                </div>
+
+ <!-- jQuery first, then Bootstrap JS. -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+
+
+ <script type="text/javascript">
+     $("form").submit(function(e) {
+
+         var error = "";
+
+         if ($("#name").val() == "") {
+
+             error += "The name field is required.<br>"
+
+         }
+
+         if ($("#mobileno").val() == "") {
+
+             error += "The mobileno field is required.<br>"
+
+         }
+
+
+         if ($("#email").val() == "") {
+
+             error += "The email field is required.<br>"
+
+         }
+
+
+         if ($("#content").val() == "") {
+
+             error += "The content field is required.<br>"
+
+         }
+
+         if (error != "") {
+
+             $("#error").html('<div class="alert alert-danger" role="alert"><p><strong>There were error(s) in your form:</strong></p>' + error + '</div>');
+
+             return false;
+
+         } else {
+
+             return true;
+
+         }
+     })
+
+     var swiper = new Swiper('.blog-slider', {
+         spaceBetween: 30,
+         effect: 'fade',
+         loop: true,
+         mousewheel: {
+             invert: false,
+         },
+         autoplay: {
+             delay: 3300,
+         },
+         // autoHeight: true,
+         pagination: {
+             el: '.blog-slider__pagination',
+             clickable: true,
+         }
+     });
+
+     // when animating on canvas, it is best to use requestAnimationFrame instead of setTimeout or setInterval
+     // not supported in all browsers though and sometimes needs a prefix, so we need a shim
+     window.requestAnimFrame = (function() {
+         return window.requestAnimationFrame ||
+             window.webkitRequestAnimationFrame ||
+             window.mozRequestAnimationFrame ||
+             function(callback) {
+                 window.setTimeout(callback, 1000 / 60);
+             };
+     })();
+
+     // now we will setup our basic variables for the demo
+     var canvas = document.getElementById('canvas'),
+         ctx = canvas.getContext('2d'),
+         // full screen dimensions
+         cw = window.innerWidth,
+         ch = window.innerHeight,
+         // firework collection
+         fireworks = [],
+         // particle collection
+         particles = [],
+         // starting hue
+         hue = 120,
+         // when launching fireworks with a click, too many get launched at once without a limiter, one launch per 5 loop ticks
+         limiterTotal = 5,
+         limiterTick = 0,
+         // this will time the auto launches of fireworks, one launch per 80 loop ticks
+         timerTotal = 80,
+         timerTick = 0,
+         mousedown = false,
+         // mouse x coordinate,
+         mx,
+         // mouse y coordinate
+         my;
+
+     // set canvas dimensions
+     canvas.width = cw;
+     canvas.height = ch;
+
+     // now we are going to setup our function placeholders for the entire demo
+
+     // get a random number within a range
+     function random(min, max) {
+         return Math.random() * (max - min) + min;
+     }
+
+     // calculate the distance between two points
+     function calculateDistance(p1x, p1y, p2x, p2y) {
+         var xDistance = p1x - p2x,
+             yDistance = p1y - p2y;
+         return Math.sqrt(Math.pow(xDistance, 2) + Math.pow(yDistance, 2));
+     }
+
+     // create firework
+     function Firework(sx, sy, tx, ty) {
+         // actual coordinates
+         this.x = sx;
+         this.y = sy;
+         // starting coordinates
+         this.sx = sx;
+         this.sy = sy;
+         // target coordinates
+         this.tx = tx;
+         this.ty = ty;
+         // distance from starting point to target
+         this.distanceToTarget = calculateDistance(sx, sy, tx, ty);
+         this.distanceTraveled = 0;
+         // track the past coordinates of each firework to create a trail effect, increase the coordinate count to create more prominent trails
+         this.coordinates = [];
+         this.coordinateCount = 3;
+         // populate initial coordinate collection with the current coordinates
+         while (this.coordinateCount--) {
+             this.coordinates.push([this.x, this.y]);
+         }
+         this.angle = Math.atan2(ty - sy, tx - sx);
+         this.speed = 2;
+         this.acceleration = 1.05;
+         this.brightness = random(50, 70);
+         // circle target indicator radius
+         this.targetRadius = 1;
+     }
+
+     // update firework
+     Firework.prototype.update = function(index) {
+         // remove last item in coordinates array
+         this.coordinates.pop();
+         // add current coordinates to the start of the array
+         this.coordinates.unshift([this.x, this.y]);
+
+         // cycle the circle target indicator radius
+         if (this.targetRadius < 8) {
+             this.targetRadius += 0.3;
+         } else {
+             this.targetRadius = 1;
+         }
+
+         // speed up the firework
+         this.speed *= this.acceleration;
+
+         // get the current velocities based on angle and speed
+         var vx = Math.cos(this.angle) * this.speed,
+             vy = Math.sin(this.angle) * this.speed;
+         // how far will the firework have traveled with velocities applied?
+         this.distanceTraveled = calculateDistance(this.sx, this.sy, this.x + vx, this.y + vy);
+
+         // if the distance traveled, including velocities, is greater than the initial distance to the target, then the target has been reached
+         if (this.distanceTraveled >= this.distanceToTarget) {
+             createParticles(this.tx, this.ty);
+             // remove the firework, use the index passed into the update function to determine which to remove
+             fireworks.splice(index, 1);
+         } else {
+             // target not reached, keep traveling
+             this.x += vx;
+             this.y += vy;
+         }
+     }
+
+     // draw firework
+     Firework.prototype.draw = function() {
+         ctx.beginPath();
+         // move to the last tracked coordinate in the set, then draw a line to the current x and y
+         ctx.moveTo(this.coordinates[this.coordinates.length - 1][0], this.coordinates[this.coordinates.length - 1][1]);
+         ctx.lineTo(this.x, this.y);
+         ctx.strokeStyle = 'hsl(' + hue + ', 100%, ' + this.brightness + '%)';
+         ctx.stroke();
+
+         ctx.beginPath();
+         // draw the target for this firework with a pulsing circle
+         ctx.arc(this.tx, this.ty, this.targetRadius, 0, Math.PI * 2);
+         ctx.stroke();
+     }
+
+     // create particle
+     function Particle(x, y) {
+         this.x = x;
+         this.y = y;
+         // track the past coordinates of each particle to create a trail effect, increase the coordinate count to create more prominent trails
+         this.coordinates = [];
+         this.coordinateCount = 5;
+         while (this.coordinateCount--) {
+             this.coordinates.push([this.x, this.y]);
+         }
+         // set a random angle in all possible directions, in radians
+         this.angle = random(0, Math.PI * 2);
+         this.speed = random(1, 10);
+         // friction will slow the particle down
+         this.friction = 0.95;
+         // gravity will be applied and pull the particle down
+         this.gravity = 1;
+         // set the hue to a random number +-50 of the overall hue variable
+         this.hue = random(hue - 50, hue + 50);
+         this.brightness = random(50, 80);
+         this.alpha = 1;
+         // set how fast the particle fades out
+         this.decay = random(0.015, 0.03);
+     }
+
+     // update particle
+     Particle.prototype.update = function(index) {
+         // remove last item in coordinates array
+         this.coordinates.pop();
+         // add current coordinates to the start of the array
+         this.coordinates.unshift([this.x, this.y]);
+         // slow down the particle
+         this.speed *= this.friction;
+         // apply velocity
+         this.x += Math.cos(this.angle) * this.speed;
+         this.y += Math.sin(this.angle) * this.speed + this.gravity;
+         // fade out the particle
+         this.alpha -= this.decay;
+
+         // remove the particle once the alpha is low enough, based on the passed in index
+         if (this.alpha <= this.decay) {
+             particles.splice(index, 1);
+         }
+     }
+
+     // draw particle
+     Particle.prototype.draw = function() {
+         ctx.beginPath();
+         // move to the last tracked coordinates in the set, then draw a line to the current x and y
+         ctx.moveTo(this.coordinates[this.coordinates.length - 1][0], this.coordinates[this.coordinates.length - 1][1]);
+         ctx.lineTo(this.x, this.y);
+         ctx.strokeStyle = 'hsla(' + this.hue + ', 100%, ' + this.brightness + '%, ' + this.alpha + ')';
+         ctx.stroke();
+     }
+
+     // create particle group/explosion
+     function createParticles(x, y) {
+         // increase the particle count for a bigger explosion, beware of the canvas performance hit with the increased particles though
+         var particleCount = 30;
+         while (particleCount--) {
+             particles.push(new Particle(x, y));
+         }
+     }
+
+     // main demo loop
+     function loop() {
+         // this function will run endlessly with requestAnimationFrame
+         requestAnimFrame(loop);
+
+         // increase the hue to get different colored fireworks over time
+         //hue += 0.5;
+
+         // create random color
+         hue = random(0, 360);
+
+         // normally, clearRect() would be used to clear the canvas
+         // we want to create a trailing effect though
+         // setting the composite operation to destination-out will allow us to clear the canvas at a specific opacity, rather than wiping it entirely
+         ctx.globalCompositeOperation = 'destination-out';
+         // decrease the alpha property to create more prominent trails
+         ctx.fillStyle = 'rgba(0, 0, 0, 0.5)';
+         ctx.fillRect(0, 0, cw, ch);
+         // change the composite operation back to our main mode
+         // lighter creates bright highlight points as the fireworks and particles overlap each other
+         ctx.globalCompositeOperation = 'lighter';
+
+         // loop over each firework, draw it, update it
+         var i = fireworks.length;
+         while (i--) {
+             fireworks[i].draw();
+             fireworks[i].update(i);
+         }
+
+         // loop over each particle, draw it, update it
+         var i = particles.length;
+         while (i--) {
+             particles[i].draw();
+             particles[i].update(i);
+         }
+
+         // launch fireworks automatically to random coordinates, when the mouse isn't down
+         if (timerTick >= timerTotal) {
+             if (!mousedown) {
+                 // start the firework at the bottom middle of the screen, then set the random target coordinates, the random y coordinates will be set within the range of the top half of the screen
+                 fireworks.push(new Firework(cw / 2, ch, random(0, cw), random(0, ch / 2)));
+                 timerTick = 0;
+             }
+         } else {
+             timerTick++;
+         }
+
+         // limit the rate at which fireworks get launched when mouse is down
+         if (limiterTick >= limiterTotal) {
+             if (mousedown) {
+                 // start the firework at the bottom middle of the screen, then set the current mouse coordinates as the target
+                 fireworks.push(new Firework(cw / 2, ch, mx, my));
+                 limiterTick = 0;
+             }
+         } else {
+             limiterTick++;
+         }
+     }
+
+     // mouse event bindings
+     // update the mouse coordinates on mousemove
+     canvas.addEventListener('mousemove', function(e) {
+         mx = e.pageX - canvas.offsetLeft;
+         my = e.pageY - canvas.offsetTop;
+     });
+
+     // toggle mousedown state and prevent canvas from being selected
+     canvas.addEventListener('mousedown', function(e) {
+         e.preventDefault();
+         mousedown = true;
+     });
+
+     canvas.addEventListener('mouseup', function(e) {
+         e.preventDefault();
+         mousedown = false;
+     });
+
+     // once the window loads, we are ready for some fireworks!
+     window.onload = loop;
+
+ </script>
+
+
+
+</div>
+</div>
+
+<script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/tether.min.js"></script>
+    <script src="assets/js/toolkit.js"></script>
+    <script src="assets/js/application.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+
+<div class="ue-sidebar-container"></div>
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Student of B.TECH <br>JECRC University, Jaipur.</p>
+    <div class="icons">
+        <a href="https://www.facebook.com/profile.php?id=100011328102141&mibextid=ZbWKwL"><i class="fa fa-facebook"></i></a>
+        <a href="https://instagram.com/_aditiisharmaa?igshid=NTA5ZTk1NTc="><i class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/aditi-sharma-6b7528202"><i class="fa fa-linkedin"></i></a>
+    </div>
+    <a  class="footer-link"><p></p></a>
+    <p class="copyright">@Copyright 2023 - Design and Developed By Phantom</p>
+</section>    
+
+
+<!----JavaScript for toggle menu---->
+<script>
+var navLinks = document.getElementById("navLinks");
+
+function showMenu() {
+    navLinks.style.right = "0";
+}
+
+function hideMenu() {
+    navLinks.style.right = "-200px";
+}
+</script> 
+
+</body>
+</html>
+
